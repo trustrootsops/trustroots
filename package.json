@@ -142,7 +142,7 @@
     "imagesloaded": "4.1.4",
     "influx": "5.9.3",
     "juice": "8.0.0",
-    "leaflet": "1.7.1",
+    "leaflet": "1.9.1",
     "leaflet-active-area": "git+https://github.com/Mappy/Leaflet-active-area.git#f4300e288735c3290b26930a16a2463070a1beab",
     "lodash": "4.17.21",
     "mapbox-gl": "1.13.2",
