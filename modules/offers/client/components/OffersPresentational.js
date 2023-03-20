@@ -177,8 +177,6 @@ export class OffersPresentational extends Component {
           {!this.isHosting() && this.renderHostingNo()}
         </div>
 
-        {/* The map (React component) */}
-        {this.renderMap()}
       </div>
     );
   }
