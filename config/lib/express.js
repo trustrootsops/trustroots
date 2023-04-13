@@ -279,7 +279,7 @@ module.exports.initHelmetHeaders = function (app) {
         ],
 
         // Defines the origins from which stylesheets can be loaded.
-        styleSrc: ["'self'", "'unsafe-inline'"],
+        styleSrc: ["'self'", "'unsafe-inline'", '*.hcaptcha.com'],
 
         // Defines the origins from which images can be loaded.
         imgSrc: [
@@ -321,6 +321,7 @@ module.exports.initHelmetHeaders = function (app) {
           'fcm.googleapis.com',
           'www.facebook.com',
           'https://sentry.io',
+          '*.hcaptcha.com',
         ],
 
         // Allows control over Flash and other plugins.
