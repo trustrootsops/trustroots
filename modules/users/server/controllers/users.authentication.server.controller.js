@@ -2,6 +2,7 @@
  * Module dependencies.
  */
 const _ = require('lodash');
+const hcaptcha = require('hcaptcha');
 const errorService = require('../../../core/server/services/error.server.service');
 const emailService = require('../../../core/server/services/email.server.service');
 const userProfile = require('./users.profile.server.controller');
@@ -36,6 +37,19 @@ exports.signup = function (req, res) {
         }
 
         done();
+      },
+
+      // Validate hCaptcha
+      function (done) {
+        const secret = _.get(config, 'hcaptcha.secret');
+        hcaptcha
+          .verify(secret, req.body['h-captcha-response'])
+          .then(function (data) {
+            if (data.success === true) {
+              done();
+            }
+            done(new Error('Please complete hCaptcha'));
+          });
       },
 
       // Generate random token

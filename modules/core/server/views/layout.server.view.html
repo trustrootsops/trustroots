@@ -288,6 +288,8 @@
           user = {{ user | dump | safe }};
     </script>
 
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
     {% if env === 'production' %} {% for jsFile in jsFiles %}
     <script
       src="/{{jsFile}}?c={{appSettings.commit}}"
