@@ -269,6 +269,7 @@ module.exports.initHelmetHeaders = function (app) {
           // Nonce is generated above at `initLocalVariables()` middleware
           // @link https://github.com/helmetjs/helmet/wiki/Conditionally-using-middleware
           `'nonce-${res.locals.nonce}'`,
+          '*.hcaptcha.com',
         ],
 
         // Specifies the origins that can serve web fonts.
