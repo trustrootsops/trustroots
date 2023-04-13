@@ -14,6 +14,9 @@ RUN apt-get -qq update && apt-get -q install -y \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Keep npm at version 7.*
+RUN npm install --global npm@latest-7
+
 RUN mkdir -p /trustroots
 WORKDIR /trustroots
 
