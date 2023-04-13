@@ -133,6 +133,7 @@
     "gulp-shell": "0.8.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-uglify": "3.0.2",
+    "hcaptcha": "0.1.1",
     "he": "1.2.0",
     "helmet": "5.1.1",
     "html-to-text": "8.2.1",
