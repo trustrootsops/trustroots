@@ -116,7 +116,7 @@
     "express-session": "1.17.3",
     "fbgraph": "1.4.4",
     "firebase": "3.9.0",
-    "firebase-admin": "4.2.1",
+    "firebase-admin": "11.4.1",
     "git-rev": "0.2.1",
     "glob": "7.2.3",
     "gm": "1.25.0",
